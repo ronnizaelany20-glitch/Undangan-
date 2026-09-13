@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0a0a0a">
+<title>Roni & Aulia | The Wedding</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--black:#080808;--black2:#111;--white:#f7f3ec;--gold:#c7a968;--soft:#bdb6aa}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--white);font-family:Montserrat,sans-serif;font-weight:300;line-height:1.75}.serif{font-family:"Cormorant Garamond",serif}.hidden{display:none!important}
+#intro{position:fixed;z-index:100;inset:0;background:linear-gradient(#0008,#0009),url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=90") center/cover;display:grid;place-items:center;text-align:center;transition:1s}.intro-box{padding:35px 25px;max-width:600px}.eyebrow{font-size:10px;letter-spacing:5px;color:var(--gold)}#intro h1{font-size:clamp(60px,15vw,105px);font-weight:500;line-height:.82;margin:20px 0}.amp{color:var(--gold);font-style:italic}.guest{font-size:13px;letter-spacing:1px;margin:20px 0;color:#eee}.open{border:1px solid var(--gold);background:#0a0a0acc;color:#fff;padding:13px 27px;letter-spacing:2px;font-size:10px;cursor:pointer}.open:hover{background:var(--gold);color:#111}
+.cover{min-height:100svh;display:grid;place-items:center;text-align:center;background:linear-gradient(#0005,#000a),url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1800&q=90") center/cover fixed;position:relative}.frame{position:absolute;inset:20px;border:1px solid #c7a96866}.cover-content{position:relative;z-index:2}.cover h2{font:500 clamp(58px,14vw,110px)/.82 "Cormorant Garamond",serif;margin:18px 0}.cover .date{font-size:11px;letter-spacing:3px}.scroll{margin-top:50px;font-size:9px;letter-spacing:4px;color:var(--gold)}
+section{padding:90px 20px;max-width:900px;margin:auto;text-align:center}.cream{background:var(--white);color:#171717;max-width:none}.inner{max-width:850px;margin:auto}.title{font:500 47px/1.05 "Cormorant Garamond",serif;margin:8px 0 15px}.divider{width:55px;height:1px;background:var(--gold);margin:25px auto 32px}.quote{font:italic 25px/1.45 "Cormorant Garamond",serif}.lead{max-width:650px;margin:0 auto;color:#ccc}.cream .lead{color:#555}
+.photo{width:100%;max-width:650px;height:500px;object-fit:cover;filter:grayscale(1);display:block;margin:35px auto}.couple{display:grid;grid-template-columns:1fr 70px 1fr;gap:20px;align-items:center;margin-top:40px}.person h3{font:600 35px/1 "Cormorant Garamond",serif;margin:0}.person p{font-size:11px;color:#777}.bigamp{font:italic 50px "Cormorant Garamond",serif;color:var(--gold)}
+.timeline{max-width:600px;margin:40px auto;text-align:left}.story{border-left:1px solid var(--gold);padding:0 0 32px 25px;position:relative}.story:before{content:"";position:absolute;left:-5px;top:9px;width:8px;height:8px;border:1px solid var(--gold);border-radius:50%;background:var(--black)}.story h3{font:500 28px "Cormorant Garamond",serif;color:var(--gold);margin:0}.story p{margin:4px 0;color:#ddd}.cream .story p{color:#555}
+.events{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{padding:28px 15px;border:1px solid #c7a96855}.card h3{font:500 31px "Cormorant Garamond",serif;margin:0 0 8px}.card p{font-size:11px;margin:3px}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:650px;margin:35px auto}.unit{border:1px solid #c7a96855;padding:15px}.unit b{font:500 39px "Cormorant Garamond",serif;display:block}.unit span{font-size:8px;letter-spacing:2px;color:var(--soft)}
+.map{width:100%;height:330px;border:0;filter:grayscale(1);margin-top:20px}.btn{display:inline-block;border:1px solid var(--gold);padding:11px 20px;color:#fff;text-decoration:none;font-size:10px;letter-spacing:2px;margin-top:20px}.cream .btn{color:#111}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;max-width:700px;margin:35px auto}.gallery img{width:100%;height:250px;object-fit:cover;filter:grayscale(1)}
+.form{max-width:500px;margin:30px auto;text-align:left}.form input,.form select{width:100%;padding:13px;margin:5px 0 12px;background:#151515;border:1px solid #c7a96855;color:#fff;font:inherit}.form button{width:100%;padding:13px;border:0;background:var(--gold);color:#111;font-weight:600;letter-spacing:1px}
+.gift{max-width:430px;margin:25px auto;padding:25px;border:1px solid #c7a96855;background:#101010}.copy{margin-top:15px;background:none;border:1px solid var(--gold);color:var(--gold);padding:9px 15px;cursor:pointer;font-size:10px;letter-spacing:1px}
+.music{position:fixed;right:18px;bottom:18px;z-index:50;width:46px;height:46px;border:1px solid var(--gold);border-radius:50%;background:#111e;color:var(--gold);cursor:pointer}.fade{opacity:0;transform:translateY(24px);transition:1s}.fade.show{opacity:1;transform:none}.footer{padding:80px 20px;text-align:center;background:#040404}.gold{color:var(--gold)}
+@media(max-width:600px){.couple{grid-template-columns:1fr}.bigamp{font-size:35px}.events{grid-template-columns:1fr}.photo{height:420px}.gallery{grid-template-columns:1fr}.gallery img{height:300px}.countdown{grid-template-columns:repeat(2,1fr)}section{padding:75px 18px}}
+</style>
+</head>
+<body>
+
+<div id="intro">
+  <div class="intro-box">
+    <div class="eyebrow">THE WEDDING OF</div>
+    <h1 class="serif">Roni <span class="amp">&</span> Aulia</h1>
+    <div class="guest">Kepada Yth.<br><strong>Bapak/Ibu/Saudara/i</strong></div>
+    <button class="open" onclick="openInvitation()">BUKA UNDANGAN</button>
+  </div>
+</div>
+
+<audio id="music" loop src="https://cdn.pixabay.com/audio/2022/10/25/audio_9461c1f8d1.mp3"></audio>
+<button class="music" onclick="toggleMusic()">♪</button>
+
+<header class="cover">
+ <div class="frame"></div>
+ <div class="cover-content">
+  <div class="eyebrow">WE ARE GETTING MARRIED</div>
+  <h2>Roni <span class="amp">&</span> Aulia</h2>
+  <div class="date">SATURDAY · 18 JULY 2027</div>
+  <div class="scroll">SCROLL TO DISCOVER ↓</div>
+ </div>
+</header>
+
+<section class="cream">
+ <div class="inner fade">
+  <div class="eyebrow" style="color:#9b7b38">ASSALAMUALAIKUM</div>
+  <h2 class="title">Dengan penuh rasa syukur</h2><div class="divider"></div>
+  <p class="quote">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri, supaya kamu merasa tenteram kepadanya.”</p>
+  <p class="lead">Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara pernikahan kami.</p>
+ </div>
+</section>
+
+<section>
+ <div class="fade">
+  <div class="eyebrow">BRIDE & GROOM</div><h2 class="title">Two hearts, one journey.</h2><div class="divider"></div>
+  <img class="photo" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85" alt="Foto pasangan">
+  <div class="couple">
+   <div class="person"><h3>Roni Jaelani</h3><p>Putra dari<br>Bapak Ahmad Jaelani & Ibu Siti Aminah</p></div>
+   <div class="bigamp">&</div>
+   <div class="person"><h3>Aulia Rahma</h3><p>Putri dari<br>Bapak Hendra Rahman & Ibu Nurhayati</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="cream">
+ <div class="inner fade">
+  <div class="eyebrow" style="color:#9b7b38">OUR STORY</div><h2 class="title">A little story of us</h2><div class="divider"></div>
+  <div class="timeline">
+   <div class="story"><h3>2023 — First Meet</h3><p>Pertemuan sederhana yang ternyata menjadi awal dari sebuah cerita.</p></div>
+   <div class="story"><h3>2025 — We Started</h3><p>Dua orang yang semakin yakin untuk berjalan bersama.</p></div>
+   <div class="story"><h3>2026 — The Commitment</h3><p>Kami memutuskan membawa hubungan ini ke jenjang yang lebih serius.</p></div>
+   <div class="story"><h3>2027 — Forever Begins</h3><p>Dengan izin Allah SWT, kami mengikat janji suci pernikahan.</p></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="fade">
+  <div class="eyebrow">SAVE THE DATE</div><h2 class="title">Our Special Day</h2><div class="divider"></div>
+  <div class="countdown">
+   <div class="unit"><b id="d">0</b><span>DAYS</span></div><div class="unit"><b id="h">0</b><span>HOURS</span></div>
+   <div class="unit"><b id="m">0</b><span>MINUTES</span></div><div class="unit"><b id="s">0</b><span>SECONDS</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="cream">
+ <div class="inner fade">
+  <div class="eyebrow" style="color:#9b7b38">WEDDING EVENTS</div><h2 class="title">Join us</h2><div class="divider"></div>
+  <div class="events">
+   <div class="card"><h3>Akad Nikah</h3><p>Sabtu, 18 Juli 2027</p><p>09.00 WIB — selesai</p><p>Graha Sukasari</p></div>
+   <div class="card"><h3>Resepsi</h3><p>Sabtu, 18 Juli 2027</p><p>11.00 — 14.00 WIB</p><p>Graha Sukasari</p></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="fade">
+  <div class="eyebrow">MOMENTS</div><h2 class="title">Our Gallery</h2><div class="divider"></div>
+  <div class="gallery">
+   <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=900&q=85" alt="">
+   <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=85" alt="">
+   <img src="https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=900&q=85" alt="">
+   <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=85" alt="">
+  </div>
+ </div>
+</section>
+
+<section class="cream">
+ <div class="inner fade">
+  <div class="eyebrow" style="color:#9b7b38">LOCATION</div><h2 class="title">Where to find us</h2><div class="divider"></div>
+  <p><strong>Graha Sukasari</strong><br>Jl. Raya Sukasari, Kabupaten Bandung Barat</p>
+  <iframe class="map" loading="lazy" src="https://www.google.com/maps?q=Kabupaten%20Bandung%20Barat&output=embed"></iframe>
+  <a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Graha+Sukasari+Bandung+Barat">BUKA GOOGLE MAPS</a>
+ </div>
+</section>
+
+<section>
+ <div class="fade">
+  <div class="eyebrow">RSVP</div><h2 class="title">Will you join us?</h2><div class="divider"></div>
+  <div class="form">
+   <input id="name" placeholder="Nama lengkap">
+   <select id="att"><option value="">Konfirmasi kehadiran</option><option>Hadir</option><option>Tidak hadir</option></select>
+   <input id="count" type="number" min="1" max="10" placeholder="Jumlah tamu">
+   <button onclick="rsvp()">KIRIM KE WHATSAPP</button>
+  </div>
+ </div>
+</section>
+
+<section class="cream">
+ <div class="inner fade">
+  <div class="eyebrow" style="color:#9b7b38">WEDDING GIFT</div><h2 class="title">Your love is enough</h2><div class="divider"></div>
+  <p>Jika ingin memberikan tanda kasih, dapat melalui:</p>
+  <div class="gift"><strong>BCA</strong><br><span id="rek">1234567890</span><br>a.n. Roni Jaelani<br><button class="copy" onclick="copyRek()">SALIN NOMOR REKENING</button></div>
+ </div>
+</section>
+
+<footer class="footer"><div class="eyebrow">WITH LOVE</div><h2 class="title">Roni <span class="gold">&</span> Aulia</h2><p>Terima kasih atas doa dan restu yang diberikan kepada kami. 🤍</p></footer>
+
+<script>
+const intro=document.getElementById('intro'),music=document.getElementById('music');
+function openInvitation(){intro.style.opacity='0';setTimeout(()=>intro.classList.add('hidden'),1000);music.play().catch(()=>{});}
+function toggleMusic(){if(music.paused){music.play();}else{music.pause();}}
+const target=new Date('2027-07-18T09:00:00+07:00').getTime();
+function clock(){let x=target-Date.now();if(x<0)x=0;d.textContent=Math.floor(x/86400000);h.textContent=Math.floor(x%86400000/3600000);m.textContent=Math.floor(x%3600000/60000);s.textContent=Math.floor(x%60000/1000)}clock();setInterval(clock,1000);
+function rsvp(){let n=name.value.trim(),a=att.value,c=count.value||1;if(!n||!a){alert('Mohon isi nama dan konfirmasi kehadiran.');return}let phone='6281234567890';let msg=`Assalamu'alaikum, saya ${n}.%0A%0AKonfirmasi kehadiran Roni & Aulia:%0AStatus: ${a}%0AJumlah tamu: ${c} orang.%0A%0ATerima kasih.`;window.open(`https://wa.me/${phone}?text=${msg}`,'_blank')}
+function copyRek(){navigator.clipboard?.writeText(rek.textContent);alert('Nomor rekening berhasil disalin.')}
+const ob=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});document.querySelectorAll('.fade').forEach(e=>ob.observe(e));
+</script>
+</body>
+</html>
